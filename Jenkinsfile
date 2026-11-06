@@ -16,7 +16,7 @@ pipeline {
           docker rm -f testapp || true
           docker run -d --name testapp $IMAGE
           sleep 5
-          docker exec testapp python -c "import urllib.request; print(urllib.request.urlopen('http://localhost:5000/healthz').read())"
+          docker exec testapp python -c "import urllib.request; print(urllib.request.urlopen('http://localhost:5000/health').read())"
         '''
       }
     }
