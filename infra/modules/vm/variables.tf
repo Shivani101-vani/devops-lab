@@ -1,0 +1,11 @@
+variable "name" { type = string }
+variable "location" { type = string }
+variable "resource_group_name" { type = string }
+variable "subnet_id" { type = string }
+variable "lb_backend_pool_id" { type = string }
+variable "vm_size" { type = string }
+variable "admin_username" { type = string }
+variable "ssh_public_key" { type = string }
+variable "app_image" { type = string }
+variable "container_port" { type = number }
+variable "tags" { type = map(string) }
